@@ -54,67 +54,76 @@ html{
   *:after{
     box-sizing: inherit;
   }
+/* I have used css reset code to change the default properties of the browser. */
 
+
+  /* backgroud_color */
 body{
     background-color:#aad4cf;
 }
 
 .wrapper{
+    background-color: #a6d2e5;
     width:80vw;
     margin: auto;
 }
 
+.banner_container-text{
+    position: absolute;
+    color: white;
+    font-size: 5rem;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* changing the width and height of the image*/
 .img_1{
    max-height: 40vh;
     min-width: 100%;
     
 }
 
-.text{
-        position: absolute;
-        color: white;
-        font-size: 5rem;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-}
-
+/* remove the default styling of anchor dag and changing the font. */
 a{
     text-decoration: none;
     font-size: 30px;
     color: black;
 }
 
+/* I used flex box to create a navigation bar and i also used flex properties to give equal space to all the child. */
 .nav{
     width: 100%;
     display: flex;
     justify-content: space-around;
     text-align: center;
-    /* width:100%; */
-    /* padding: 5%;   */
-    background-color: #a6d2e5;
 }
 .nav div:last-child{
     border:none;
 }
 
+/* I have used this to add a grey line between navigation buttons. */
 .nav>div{
     border-right: 1px solid grey;
     padding:0 10rem;
 }
 
-main{background-color: beige;}
 
-.heading{
-   background-color: #a6d2e5;
+nav,main{
+    padding-left:1rem ;
+}
+
+.content_heading{
+   
    width: 80vw;
    margin: auto;
    padding: 45px 0 0 0;
 }
 
+/* I have used font weight to give boldness to the font and size to change the size of the text. */
 h1{
      font-size: 45px;
-     font-weight: 10px;
+     font-weight: 500;
 }
 
 .content{
@@ -130,35 +139,27 @@ h1{
     margin: auto;
     
 }
+
+/* I have used float left for Positioning and formatting the content to the left side.  */
 .float_element{
 float: left;
+padding-right: 1rem;
+padding-bottom: 0.3rem;
 }
 
 .content>p{
-    margin: auto;
-    width: 64vw;
-    float: right;
     font-size: 22px;
+}
+
+.list_container{
+    margin-top: 1rem;
 }
 
 .fst_heading{
     font-size: 38px;
-    margin: 110px auto auto 20px;
+    margin-bottom: 0.3rem;
     width: 25vw;
 }
-
-/* ul{
-    margin-top: 15px;
-    margin-left: 25px;
-    list-style-type: circle;
-    color: black;
-}
-
-li{
-    font-size: 22px;
-    
-} */
-
 
 
 ul {
@@ -171,26 +172,23 @@ ul {
     font-weight: bold;
     display: inline-block; 
     width: auto;
-    margin-top: 10px;
-    margin-left: 1rem;
     
   }
 
 .sec_heading{
     font-size: 38px;
-    margin: 25px auto auto 20px;
+    margin-top: 25px;
     width: 25vw;
   }
 
-
+/* Giving border and padding to the form */
 form{
-    
     border: 1px solid black;
     padding: 20px 15px 10px 15px;
-
 }
 
-.button{
+/*  I used flex for Positioning and formatting of form buttons. */
+.feedback_btn{
     display: flex;
     justify-content: space-around;
     width: 150px;
@@ -198,6 +196,7 @@ form{
     padding-bottom: 10px;
 }
 
+/* I have used margin auto to properly assign the margin vertically and horizontally. */
 #f_name{
     width: 78vw;
     margin: auto;
@@ -215,6 +214,7 @@ form{
     height: 100px;
 }
 
+/* I have used text_align right to align the information to the right side of the webpage. */
 footer{
  padding-top: 10px;   text-align: right;
 }
