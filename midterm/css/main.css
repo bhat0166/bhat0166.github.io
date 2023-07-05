@@ -189,6 +189,8 @@ form{
 
 /*  I used flex for Positioning and formatting of form buttons. */
 .feedback_btn{
+
+    
     display: flex;
     justify-content: space-around;
     width: 150px;
