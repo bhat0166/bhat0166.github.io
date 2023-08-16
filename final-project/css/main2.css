@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Css Rest */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  text-decoration: none;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Universal styling */
+
+
+
+*{
+  box-sizing: border-box;
+}
+
+iframe{
+  width: 100%;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
+
+}
+
+/* Header */
+header nav{
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+    background-color: #1c1c1c;
+    color: white;
+    width:100%;
+}
+.navbar{
+	padding: 0 2rem;
+}
+.navbar a{
+	text-decoration: none;
+	display: inline-block;
+	color: #C88C01;
+	padding: 1rem;
+}
+.navbar a:hover{
+background-color: black;
+color: bisque;
+}
+.search-container button{
+
+}
+
+/* Main */
+h1{
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+.banner{
+	background-image: url("../images/main-banner.jpg");
+	width:100%;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner .innershadow{
+	width:80%;
+	height: 80%;
+	margin: auto;
+	background-color: #1c1c1cad;
+	padding: 3rem;
+}
+.innershadow h1, .innershadow p{
+	color: white;
+	margin-bottom: 1rem;
+}
+.innershadow h1{
+	font-size: 3rem;
+}
+
+.innershadow button{
+	padding: 1rem;
+	background-color:#C88C01;
+	color: #1c1c1c;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+/* About us section */
+.about-us{
+	display: flex;
+	flex-direction: row;
+	align-items:flex-start;
+	background-color: #FFE7AE;
+	padding: 2rem 3rem;
+}
+.about-us img{
+	width:30%;
+	height: 30%s;
+	margin-right: 1rem;
+}
+.aboutUs_text  h1{
+	font-size: 3rem;
+	font-weight: 600;
+}
+.aboutUs_text p{
+	font-size: 1rem;
+}
+
+/* Card Container */
+
+.cards_container{
+
+}
+.card{
+	width:35%;
+	background-color: #FFE7AE;
+	margin:0.5rem;
+
+}
+.card h1{
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.card h1,.card p,.card button{
+	padding-left: 1rem;
+}
+.card img{
+	width:100%;
+	min-width: 100%;
+	margin-bottom: 1rem;
+}
+.card button{
+	min-width: 100%;
+	padding: 1rem 2rem;
+	background-color: #1c1c1c;
+	color: whitesmoke;
+	outline: none;
+	border:none;
+}
+.cardPart1 .card{
+	width:50%;
+}
+
+.cardPart1,.cardPart2{
+	display:flex ;
+	flex-direction: row;
+}
+
+/* team  section*/
+
+#team{
+    background-color: #ffe6ac;
+    padding: 10px;
+  }
+  
+  #team h3{
+    padding-bottom: 0;
+  }
+  
+  hr {
+    height: 2px;
+    background-color: #C78C06;
+    border: black;
+  }
+
+  .t-grid{
+    display: grid;
+    gap:10px;
+}
+  
+
+/* Table */
+
+form input, form textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  form button{
+    background-color: #222;
+    color: #C78C06;
+    border: 1px solid #C78C06;
+    font-size: 1.2rem;
+    padding:0.5rem;
+  }
+/* message section end here */
+
+/* table section */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td{
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  th{
+    background-color: #ffe6ac;
+  }
+  /* table section end here */
+
+
+
+
+
+
+/* Footer */
+footer{
+    background-color: #222;
+    color: #C78C06;
+    padding:1rem;
+  }
+  
+  footer a{
+    color: #C78C06;
+    text-decoration: underline;
+  }
