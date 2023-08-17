@@ -5,487 +5,774 @@
 
 /* Css Rest */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
   text-decoration: none;
 }
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
 
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Universal styling */
 
 
 
-*{
+* {
   box-sizing: border-box;
 }
 
-body{margin:0;overflow-x: hidden;}
-iframe{
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+iframe {
   width: 100%;
 }
 
-body{
+body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.4;
 }
 
 
-  /* Mobile Version */
+/* Mobile Version */
 
 
 
-  @media screen and (max-width:760px) {
-    header nav{
-      display: flex;
-      flex-direction: column;  background-color: #1c1c1c;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      width:100%;
-    }
-    .img_logo img{
-      width: 100vw;
-    }
-    .navbar{
-      display: flex;
-      flex-direction: column;
-      padding: 0 2rem;
-    }
-    .navbar a{
-      text-decoration: none;
-      display: inline-block;
-      color: #C88C01;
-      padding: 1rem;
-    }
-    .navbar a:hover{
-      background-color: #C88C01;
-      color: bisque;
-      }
-
-      /* Banner */
-      h1{
-        font-size: 3rem;
-        font-weight: 600;
-      }
-      
-      .banner{
-        background-image: url("../images/main-banner.jpg");
-        width:100%;
-        background-size: 50rem 50rem;
-        background-repeat: no-repeat;
-        padding: 1.5rem 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .banner .innershadow{
-        width:100%;
-        height: 80%;
-        margin: auto;
-        background-color: #1c1c1cad;
-        padding: 3rem;
-      }
-      .innershadow h1, .innershadow p{
-        color: white;
-        margin-bottom: 1rem;
-      }
-      .innershadow h1{
-        font-size: 3rem;
-      }
-      
-      .innershadow button{
-        padding: 1rem;
-        background-color:#C88C01;
-        color: #1c1c1c;
-        border: none;
-        outline: none;
-        cursor: pointer;
-      }
-
-      /* About us */
-      .about-us{
-        display: flex;
-        flex-direction: column;
-        align-items:flex-start;
-        background-color: #FFE7AE;
-        padding: 0.5rem;
-      }
-      .about-us img{
-        width:100%;
-        max-width: 100%;
-        height: 30%s;
-      }
-      .aboutUs_text  h1{
-        font-size: 3rem;
-        font-weight: 600;
-      }
-      .aboutUs_text p{
-        font-size: 1rem;
-      }
-      /* Services section */
-      .services{
-       width: 100%;
-       padding:2rem 0.5rem;
-        }
-        .card{
-          background-color: #FFE7AE;
-          margin-bottom: 1rem;
-        }
-        .card h1{
-          font-size: 1.5rem;
-          font-weight: 600;
-        }
-        .card h1,.card p,.card button{
-          padding-left: 1rem;
-          margin:1rem 0;
-
-        }
-        .card img{
-          width:100%;
-          min-width: 100%;
-          margin-bottom: 1rem;
-        }
-        .card button{
-          min-width: 100%;
-          padding: 1rem 2rem;
-          background-color: #1c1c1c;
-          color: whitesmoke;
-          outline: none;
-          border:none;
-          cursor: pointer;
-        }
-        .cardPart1 .card{
-          width:100%;
-          margin-bottom: 1rem;
-        }
-        
-        .cardPart1,.cardPart2{
-          display:flex ;
-          flex-direction: column;
-        }
-        
-      
-  }
-
-  /* Desktop Version */
-  @media screen and  (min-width:761px){
-    header nav{
-      display: flex;
-      flex-direction: row;
+@media screen and (max-width:760px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1c1c;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-      background-color: #1c1c1c;
-      color: white;
-      width:100%;
+    color: white;
+    width: 100%;
   }
-  .navbar{
+
+  .img_logo img {
+    width: 100vw;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
     padding: 0 2rem;
   }
-  .navbar a{
+
+  .navbar a {
     text-decoration: none;
     display: inline-block;
     color: #C88C01;
     padding: 1rem;
   }
-  .navbar a:hover{
-  background-color: black;
-  color: bisque;
+
+  .navbar a:hover {
+    background-color: #C88C01;
+    color: bisque;
   }
-  
-  
-  /* Main */
-  h1{
+
+  /* Banner */
+  h1 {
     font-size: 3rem;
     font-weight: 600;
   }
-  
-  .banner{
+
+  .banner {
     background-image: url("../images/main-banner.jpg");
-    width:100%;
-    height: 70vh;
+    width: 101%;
+    background-size: 50rem 50rem;
+    background-repeat: no-repeat;
+    padding: 1.5rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .banner .innershadow{
-    width:80%;
+
+  .banner .innershadow {
+    width: 100%;
     height: 80%;
     margin: auto;
     background-color: #1c1c1cad;
     padding: 3rem;
   }
-  .innershadow h1, .innershadow p{
+
+  .innershadow h1,
+  .innershadow p {
     color: white;
     margin-bottom: 1rem;
   }
-  .innershadow h1{
+
+  .innershadow h1 {
     font-size: 3rem;
   }
-  
-  .innershadow button{
+
+  .innershadow button {
     padding: 1rem;
-    background-color:#C88C01;
+    background-color: #C88C01;
     color: #1c1c1c;
     border: none;
     outline: none;
     cursor: pointer;
   }
-  
-  /* About us section */
-  .about-us{
+
+  /* About us */
+  .about-us {
+    width: 101%;
     display: flex;
-    flex-direction: row;
-    align-items:flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     background-color: #FFE7AE;
-    padding: 2rem 3rem;
+    padding: 0.5rem 0.6rem 0.5rem 0.5rem;
   }
-  .about-us img{
-    width:30%;
+
+  .about-us img {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
     height: 30%s;
-    margin-right: 1rem;
   }
-  .aboutUs_text  h1{
+
+  .aboutUs_text h1 {
     font-size: 3rem;
     font-weight: 600;
   }
-  .aboutUs_text p{
+
+  .aboutUs_text p {
     font-size: 1rem;
   }
-  
+
+  /* Services section */
+  .services {
+    width: 100%;
+    padding: 2rem 0.5rem;
+  }
+
+  .card {
+    background-color: #FFE7AE;
+    margin-bottom: 1rem;
+  }
+
+  .card h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .card h1,
+  .card p,
+  .card button {
+    padding-left: 1rem;
+    margin: 1rem 0;
+  }
+
+  .card img {
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .card button {
+    min-width: 100%;
+    padding: 1rem 2rem;
+    background-color: #1c1c1c;
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .cardPart1 .card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .cardPart1,
+  .cardPart2 {
+    display: flex;
+    flex-direction: column;
+  }
+
   /* Division */
-  .banner_division{
+  .banner_division {
+    width: 101%;
+    color: white;
+    padding: 2rem;
+    background-image: url("../images/vision.jpg");
+    background-size: 100% 100%;
+  }
+
+  .banner_division h1 {
+    margin-bottom: 1rem;
+  }
+
+  .banner_division p {
+    margin-bottom: 1rem;
+  }
+
+  .banner_division button {
+    padding: 1rem;
+    outline: 1px solid #C88C01;
+    background-color: #1c1c1c;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* team  section*/
+  .team {
     width:100%;
+    padding: 0.5rem;
+    margin: auto;
+    margin-bottom: 3.5rem;
+  }
+
+  .team h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .profile_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .member {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFE7AE;
+    margin-bottom: 1rem;
+  }
+
+  .member img {
+    width: 100%;
+    max-width: 100%;
+    height: 50%;
+  }
+
+  .member_details {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .member_details h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .member_details h4 {
+    font: 1.2rem;
+    font-weight: 600;
+
+  }
+
+  .member_details .hr {
+    border-top: 1px solid #C78C06;
+    height: 2px;
+    margin-bottom: 1rem;
+  }
+
+  .member_details p {
+    font-size: 1rem;
+  }
+
+  /* Contact Us */
+.contact_us{
+	margin: auto;
+  padding: 0.5rem;
+}
+.contact_us h2{
+font-size: 2.5rem;
+font-weight: 600;
+margin-bottom: 2rem;
+}
+.formLocation_container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.location_container,.form_container{
+	width: 100%;
+	padding: 1rem;
+}
+.form_container input,.form_container label,.form_container textarea{
+  display: block;
+  margin: 0.5rem 0;
+}
+
+iframe {
+  width: 100%;
+  height: 20rem;
+}
+}
+
+.location_container h3{
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.form_container h3{
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+form input, form textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+form #btn{
+    background-color: #222;
+    color: #C78C06;
+    border: 1px solid #C78C06;
+    font-size: 1rem;
+    padding:0.2rem;
+  }
+
+
+
+}
+
+/* Desktop Version */
+@media screen and (min-width:761px) {
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1c1c1c;
+    color: white;
+    width: 100%;
+  }
+
+  .navbar {
+    padding: 0 2rem;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    display: inline-block;
+    color: #C88C01;
+    padding: 1rem;
+  }
+
+  .navbar a:hover {
+    background-color: black;
+    color: bisque;
+  }
+
+
+  /* Main */
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .banner {
+    background-image: url("../images/main-banner.jpg");
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner .innershadow {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background-color: #1c1c1cad;
+    padding: 3rem;
+  }
+
+  .innershadow h1,
+  .innershadow p {
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .innershadow h1 {
+    font-size: 3rem;
+  }
+
+  .innershadow button {
+    padding: 1rem;
+    background-color: #C88C01;
+    color: #1c1c1c;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  /* About us section */
+  .about-us {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #FFE7AE;
+    padding: 2rem 3rem;
+  }
+
+  .about-us img {
+    width: 30%;
+    height: 30%s;
+    margin-right: 1rem;
+  }
+
+  .aboutUs_text h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .aboutUs_text p {
+    font-size: 1rem;
+  }
+
+  /* Division */
+  .banner_division {
+    width: 100%;
     height: 20rem;
     color: white;
     padding: 2rem;
     background-image: url("../images/vision.jpg");
     background-size: 100% 100%;
   }
-  .banner_division h1{
+
+  .banner_division h1 {
     margin-bottom: 1rem;
   }
-  .banner_division p{
+
+  .banner_division p {
     margin-bottom: 1rem;
   }
-  .banner_division button{
+
+  .banner_division button {
     padding: 1rem;
     outline: 1px solid #C88C01;
-    background-color:#1c1c1c;
+    background-color: #1c1c1c;
     color: white;
     cursor: pointer;
   }
+
   /* Card Container */
-  
-  .services{
-  width:70%;
-  margin:3.5rem auto;
-  
+
+  .services {
+    width: 70%;
+    margin: 3.5rem auto;
+
   }
-  .card{
-    width:35%;
+
+  .card {
+    width: 35%;
     background-color: #FFE7AE;
-    margin:0.5rem;
-  
+    margin: 0.5rem;
+
   }
-  .card h1{
+
+  .card h1 {
     font-size: 1.5rem;
     font-weight: 600;
   }
-  .card h1,.card p,.card button{
+
+  .card h1,
+  .card p,
+  .card button {
     padding-left: 1rem;
   }
-  .card img{
-    width:100%;
+
+  .card img {
+    width: 100%;
     min-width: 100%;
     margin-bottom: 1rem;
   }
-  .card button{
+
+  .card button {
     min-width: 100%;
     padding: 1rem 2rem;
     background-color: #1c1c1c;
     color: whitesmoke;
     outline: none;
-    border:none;
+    border: none;
   }
-  .cardPart1 .card{
-    width:50%;
+
+  .cardPart1 .card {
+    width: 50%;
   }
-  
-  .cardPart1,.cardPart2{
-    display:flex ;
+
+  .cardPart1,
+  .cardPart2 {
+    display: flex;
     flex-direction: row;
   }
-  
+
   /* team  section*/
-  .team{
-    width:70%;
+  .team {
+    width: 70%;
     max-width: 70%;
     margin: auto;
     margin-bottom: 3.5rem;
   }
-  .team h2{
+
+  .team h2 {
     font-size: 2.5rem;
     font-weight: 600;
   }
-  .profile_container{
-  display: flex;
-  flex-direction: column;
+
+  .profile_container {
+    display: flex;
+    flex-direction: column;
   }
-  .member{
-  display: flex;
-  flex-direction: row;
-  background-color: #FFE7AE;
+
+  .member {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFE7AE;
   }
-  
-  .member img{
+
+  .member img {
     width: 50%;
     max-width: 50%;
     height: 50%;
   }
-  .member:last-of-type{
+
+  .member:last-of-type {
     flex-direction: row-reverse;
   }
-  .member_details{
+
+  .member_details {
     display: flex;
     flex-direction: column;
     padding: 1rem;
   }
-  .member_details h3{
+
+  .member_details h3 {
     font-size: 1.5rem;
     font-weight: 600;
   }
-  .member_details h4{
+
+  .member_details h4 {
     font: 1.2rem;
     font-weight: 600;
-    
+
   }
-  .member_details .hr{
+
+  .member_details .hr {
     border-top: 1px solid #C78C06;
     height: 2px;
     margin-bottom: 1rem;
   }
-  .member_details p{
-  font-size: 1rem;
+
+  .member_details p {
+    font-size: 1rem;
   }
-  
+
   /* Contact Us */
-  .contact_us{
-    width:70%;
+  .contact_us {
+    width: 70%;
     max-width: 70%;
     margin: auto;
   }
-  .contact_us h2{
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
+
+  .contact_us h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
   }
-  .formLocation_container{
+
+  .formLocation_container {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .location_container,.form_container{
+
+  .location_container,
+  .form_container {
     width: 50%;
     padding: 1rem;
   }
-  .location_container h3{
+
+  .location_container h3 {
     font-size: 1.5rem;
     font-weight: 600;
   }
-  .form_container h3{
+
+  .form_container h3 {
     font-size: 1.5rem;
     font-weight: 600;
   }
-  form input, form textarea{
-      display: block;
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  form #btn{
-      background-color: #222;
-      color: #C78C06;
-      border: 1px solid #C78C06;
-      font-size: 1rem;
-      padding:0.2rem;
-    }
-  
-  
+
+  form input,
+  form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  form #btn {
+    background-color: #222;
+    color: #C78C06;
+    border: 1px solid #C78C06;
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+
+
   /* table section */
-  
-  table{
-      width: 100%;
-      border-collapse: collapse;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
     margin-bottom: 2rem;
-    }
-    
-    table, th, td{
-      border: 1px solid black;
-      padding: 10px;
-    }
-    
-    th{
-      background-color: #ffe6ac;
-    }
-  
-  /* Footer */
-  footer{
-      background-color: #222;
-      color: #C78C06;
-      padding:1rem;
-    }
-    
-    footer a{
-      color: #C78C06;
-      text-decoration: underline;
-    }
-  
-  
   }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  th {
+    background-color: #ffe6ac;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: #C78C06;
+    padding: 1rem;
+  }
+
+  footer a {
+    color: #C78C06;
+    text-decoration: underline;
+  }
+
+
+}
 
 
 /* Header */
