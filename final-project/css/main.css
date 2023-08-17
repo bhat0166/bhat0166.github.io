@@ -63,6 +63,7 @@ table {
   box-sizing: border-box;
 }
 
+body{margin:0;overflow-x: hidden;}
 iframe{
   width: 100%;
 }
@@ -151,12 +152,12 @@ body{
         flex-direction: column;
         align-items:flex-start;
         background-color: #FFE7AE;
-        padding: 2rem 3rem;
+        padding: 0.5rem;
       }
       .about-us img{
-        width:30%;
+        width:100%;
+        max-width: 100%;
         height: 30%s;
-        margin-right: 1rem;
       }
       .aboutUs_text  h1{
         font-size: 3rem;
@@ -165,6 +166,48 @@ body{
       .aboutUs_text p{
         font-size: 1rem;
       }
+      /* Services section */
+      .services{
+       width: 100%;
+       padding:2rem 0.5rem;
+        }
+        .card{
+          background-color: #FFE7AE;
+          margin-bottom: 1rem;
+        }
+        .card h1{
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+        .card h1,.card p,.card button{
+          padding-left: 1rem;
+          margin:1rem 0;
+
+        }
+        .card img{
+          width:100%;
+          min-width: 100%;
+          margin-bottom: 1rem;
+        }
+        .card button{
+          min-width: 100%;
+          padding: 1rem 2rem;
+          background-color: #1c1c1c;
+          color: whitesmoke;
+          outline: none;
+          border:none;
+          cursor: pointer;
+        }
+        .cardPart1 .card{
+          width:100%;
+          margin-bottom: 1rem;
+        }
+        
+        .cardPart1,.cardPart2{
+          display:flex ;
+          flex-direction: column;
+        }
+        
       
   }
 
