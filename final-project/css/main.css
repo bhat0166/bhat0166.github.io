@@ -157,6 +157,7 @@ iframe {
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.4;
+  max-width: 1200px; 
 }
 
 
@@ -451,9 +452,36 @@ form #btn{
     padding:0.2rem;
   }
 
+  /* table section */
 
-
+table{
+  width: 100%;
+  border-collapse: collapse;
+margin-bottom: 2rem;
 }
+
+table, th, td{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+th{
+  background-color: #ffe6ac;
+}
+/* table section end here */
+
+/* Footer */
+footer{
+  background-color: #222;
+  color: #C78C06;
+  padding:1rem;
+}
+
+footer a{
+  color: #C78C06;
+  text-decoration: underline;
+}
+
 
 /* Desktop Version */
 @media screen and (min-width:761px) {
@@ -589,7 +617,6 @@ form #btn{
     width: 35%;
     background-color: #FFE7AE;
     margin: 0.5rem;
-
   }
 
   .card h1 {
@@ -601,6 +628,7 @@ form #btn{
   .card p,
   .card button {
     padding-left: 1rem;
+    margin:0.5rem 0;
   }
 
   .card img {
@@ -775,4 +803,3 @@ form #btn{
 }
 
 
-/* Header */
