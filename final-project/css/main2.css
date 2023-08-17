@@ -162,7 +162,9 @@ h1{
 
 /* Card Container */
 
-.cards_container{
+.services{
+width:70%;
+margin:3.5rem auto;
 
 }
 .card{
@@ -201,27 +203,86 @@ h1{
 }
 
 /* team  section*/
-
-#team{
-    background-color: #ffe6ac;
-    padding: 10px;
-  }
-  
-  #team h3{
-    padding-bottom: 0;
-  }
-  
-  hr {
-    height: 2px;
-    background-color: #C78C06;
-    border: black;
-  }
-
-  .t-grid{
-    display: grid;
-    gap:10px;
+.team{
+	width:70%;
+	max-width: 70%;
+	margin: auto;
+	margin-bottom: 3.5rem;
 }
-  
+.team h2{
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+.profile_container{
+display: flex;
+flex-direction: column;
+}
+.member{
+display: flex;
+flex-direction: row;
+background-color: #FFE7AE;
+}
+
+.member img{
+	width: 50%;
+	max-width: 50%;
+	height: 50%;
+}
+.member:last-of-type{
+	flex-direction: row-reverse;
+}
+.member_details{
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+}
+.member_details h3{
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.member_details h4{
+	font: 1.2rem;
+	font-weight: 600;
+	
+}
+.member_details .hr{
+	border-top: 1px solid #C78C06;
+	height: 2px;
+	margin-bottom: 1rem;
+}
+.member_details p{
+font-size: 1rem;
+}
+
+/* Contact Us */
+.contact_us{
+	width:70%;
+	max-width: 70%;
+	margin: auto;
+}
+.contact_us h2{
+font-size: 2.5rem;
+font-weight: 600;
+margin-bottom: 2rem;
+}
+.formLocation_container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.location_container,.form_container{
+	width: 50%;
+	padding: 1rem;
+}
+.location_container h3{
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.form_container h3{
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
 
 /* Table */
 
