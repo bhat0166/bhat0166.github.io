@@ -73,6 +73,19 @@ body{
 
 }
 
+@media screen and (max-width:760px){
+	header nav{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem;
+		background-color: #1c1c1c;
+		color: white;
+		width:100%;
+	}
+}
+
 /* Header */
 header nav{
     display: flex;
